@@ -3,3 +3,11 @@
 <% comp_move = ["rock", "paper", "scissors"].sample %>
 
 <h1>They played <%= comp_move %>!</h1>
+
+<% if comp_move == "rock"%>
+  tie
+<%elsif comp_move == "paper"%>
+  lose
+<%elsif comp_move =="scissors"%>
+  won
+<% end %>
